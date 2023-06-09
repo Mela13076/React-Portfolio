@@ -9,17 +9,18 @@
 
 /* Navigation Bar Style */
 
-.navbar {
-  /* width: 100%; */
+/* .navbar {
+  width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #55fef9;
-  padding-left: 30px;
+  padding: 0 30px;
   color: #ff4bd8;
   font-weight: bold;
   box-shadow: 0 5px 20px rgba(244, 5, 193, 0.5);
+  box-sizing: border-box;
 }
 
 
@@ -38,7 +39,7 @@ nav{
 }
 
 .navbar li {
-  margin-left: 2rem;
+  margin-left: 1rem;
   color: #ff4bd8;
 }
 
@@ -56,8 +57,131 @@ nav{
 .navbar a:active,
 .navbar a.active {
   color: black;
+} */
+
+/**************************************/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #55fef9;
+  color: #ff4bd8;
+  padding: 10px;
+
+  height: 5rem;
+  padding: 0 30px;
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(244, 5, 193, 0.5);
 }
 
+
+/* .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+} */
+
+
+ .menu.closed ul {
+  padding: 0 10px;
+  transition: 0.3s;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  color: #ff4bd8;
+
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: center; */
+}
+
+.menu.open ul {
+  padding: 0 10px;
+  transition: 0.3s;
+  list-style: none;
+  
+  color: #ff4bd8;
+}
+
+
+
+.menu li {
+  margin-left: 1rem;
+  color: #ff4bd8;
+  
+}
+/*
+.menu li:hover{
+  color: black;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #ff4bd8;
+}
+
+.menu a:hover,
+.menu a:active,
+.menu a.active {
+  color: black;
+}  */
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #ff4bd8;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff4bd8;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .open a {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
 
 
 
