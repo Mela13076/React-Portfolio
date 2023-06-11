@@ -8,7 +8,11 @@ function Home(){
         <div className="home-page">
            
             <h2>Home page</h2>
-            <img src={Self} alt="myself"  className="self-one" height="500px" width="auto"/>
+            <div className="image-header">
+                <h2>Hello, I'm Amelia! 👋🏼 <br/> An Aspiring Full Stack Developer</h2>
+                <img src={Self} alt="myself"  className="self-one" />
+            </div>
+            
         </div>
     )
 }

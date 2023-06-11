@@ -76,11 +76,11 @@ nav{
 }
 
 
-/* .menu {
+.menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-} */
+}
 
 
  .menu.closed ul {
@@ -100,25 +100,18 @@ nav{
   padding: 0 10px;
   transition: 0.3s;
   list-style: none;
-  
   color: #ff4bd8;
+  color: white;
 }
-
-
 
 .menu li {
   margin-left: 1rem;
-  color: #ff4bd8;
-  
 }
-/*
-.menu li:hover{
-  color: black;
-}
+
 
 .menu a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #ff4bd8;
 }
 
@@ -126,7 +119,7 @@ nav{
 .menu a:active,
 .menu a.active {
   color: black;
-}  */
+}  
 
 
 .hamburger {
@@ -154,6 +147,7 @@ nav{
 
   .hamburger.open span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
+    background-color: white;
   }
 
   .hamburger.open span:nth-child(2) {
@@ -162,31 +156,83 @@ nav{
 
   .hamburger.open span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
+    background-color: white;
   }
 
   .open {
     display: flex;
     flex-direction: column;
-    background-color: #ff4bd8;
+    background-color: rgb(255, 75, 216);
     color: #fff;
     position: absolute;
     top: 50px;
     right: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .open a {
     display: block;
     margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+
+  }
+}
+
+@media (min-width: 769px) {
+  .menu.open ul {
+    padding: 0 10px;
+    transition: 0.3s;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: #ff4bd8;
+  
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
   }
 }
 
 
-
 /* Home Page Styles */ 
 
+.home-page{
+  width: 85%;
+  margin: 0 auto;
+  align-content: center;
+}
+.image-header{
+  display: flex;
+  align-items: center;
+  /* justify-content: center;
+  flex-direction: column; */
+  justify-content: space-between;
+  padding-top: 30px;
+  
+}
 .self-one{
-  box-shadow: 0 5px 20px rgba(244, 5, 193, 0.5);
+  /* box-shadow: 0 5px 20px rgba(244, 5, 193, 0.5); */
+  box-shadow: 0 5px 20px rgb(255, 75, 216);
+  border-radius: 90%;
+  max-height: 350px;
+  max-width: 350px;
+  height: 45%;
+  width: 45%;
+  
+}
+@media (max-width: 816px){
+  .image-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    text-align: center;
+    font-size: small;
+  }
+  .self-one{
+    margin-bottom: 20px;
+  }
 }
