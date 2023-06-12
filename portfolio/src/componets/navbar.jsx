@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Logo from '../assets/port-logo.png'
+import Logo from '../assets/logo.png'
 import React, { useState } from 'react';
 
 
@@ -15,7 +15,7 @@ function Navigation(){
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src={Logo} alt="logo"  height="200px" width="auto"/>
+                <img src={Logo} alt="logo"  height="60px" width="auto"/>
             </div>
             <div className={`menu ${isMenuOpen ? 'open' : 'closed'}`}>
                 {/* <a href="#home">Home</a>
