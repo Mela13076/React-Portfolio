@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
 
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+#root {
+  
+  
   text-align: center;
-} */
+}
 
 /* Navigation Bar Styles */
 
@@ -320,6 +319,60 @@
 
 
 
+/********* Certificate Page Styles *********/
 
+.certificate-page {
+  width: 85%;
+  margin: 40px auto; 
+  border: 3px solid #ff4bd8; 
+  box-shadow: 0 0px 40px #ff4bd8;
+  padding: 20px; 
+}
+
+
+.certificate {
+  border: 3px solid #55fef9; 
+  box-shadow: 0 0px 40px #55fef9;
+  
+  padding: 10px; 
+  width: 90%;
+  margin: 50px auto;
+  
+}
+
+.lightbox-overlay {
+  /* Styling for the lightbox overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-image {
+  /* Styling for the full-size image in the lightbox */
+  max-width: 100%; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+  /* Additional styles, e.g., border, box-shadow, etc. */
+}
+
+
+@media (max-width: 600px){
+  .certImage{
+    max-width: 900px;
+  }
+}
+
+
+
+
+
+
+/********* Projects Page Styles *********/
+/********* Contact Page Styles *********/
 
 
