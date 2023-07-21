@@ -351,6 +351,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .full-image {
@@ -358,6 +359,14 @@
   max-width: 100%; /* Adjust the width as needed */
   height: auto; /* Adjust the height as needed */
   /* Additional styles, e.g., border, box-shadow, etc. */
+}
+
+.certImage{
+  cursor: pointer;
+}
+
+.certDescription{
+  padding: 20px;
 }
 
 
