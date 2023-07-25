@@ -295,8 +295,8 @@
 
 .square{
   width: 70%;
-  border: 3px solid #55fef9;
-  box-shadow: 0 0px 40px #55fef9;
+  /* border: 3px solid #55fef9;
+  box-shadow: 0 0px 40px #55fef9; */
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
@@ -307,16 +307,29 @@
   margin-right: auto; */
 }
 
-.square:nth-child(even) {
+.square:nth-child(odd) {
   align-self: flex-end;
   margin-right: 60px;
+  border: 3px solid #55fef9;
+  box-shadow: 0 0px 40px #55fef9;
 }
 
-.square:nth-child(odd) {
+.square:nth-child(even) {
   align-self: flex-start;
   margin-left: 60px;
+  border: 3px solid #ff4bd8; 
+  box-shadow: 0 0px 40px #ff4bd8;
 }
 
+/* Odd neon effect (blue) */
+.square:nth-child(even) .neon-text-about {
+  text-shadow: 0 0 10px #55fef9, 0 0 20px #55fef9, 0 0 30px #55fef9, 0 0 40px #55fef9;
+}
+
+/* Even neon effect (pink) */
+.square:nth-child(odd) .neon-text-about {
+  text-shadow: 0 0 10px #ef5097, 0 0 20px #ef5097, 0 0 30px #ef5097, 0 0 40px #ef5097;
+}
 
 
 /********* Certificate Page Styles *********/
