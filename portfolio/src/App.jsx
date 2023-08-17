@@ -9,6 +9,13 @@ import Navigation from './componets/navbar';
 
 function App() {
 
+    // Function to set a cookie with SameSite=None; Secure
+    const setMyCookie = () => {
+      document.cookie = 'myCookie=myValue; SameSite=None; Secure';
+    };
+
+    // Call the function to set the cookie
+    setMyCookie();
 
   return (
     <div className="app">
