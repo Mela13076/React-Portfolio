@@ -1,7 +1,22 @@
 import ProjectComponet from "../componets/projectComponet"
 
+import Cookies from 'js-cookie';
+import { useEffect } from "react";
+
 
 function Projects(){
+
+    useEffect(() => {
+        const myCookie = Cookies.get('myCookieName');
+    
+        if (myCookie) {
+          console.log(`Cookie found: ${myCookie}`);
+          const sameSiteAttribute = Cookies.getAttributes('myCookieName').samesite;
+          console.log(`SameSite attribute: ${sameSiteAttribute}`);
+        } else {
+          console.log('Cookie not found.');
+        }
+      }, []);
 
     const projectData = [
         
@@ -18,7 +33,7 @@ function Projects(){
             'Backend: Node.js, Express.js',
             'Database: Postgres + AWS RDS',
             'Authentication: bcrypt'],
-            link: 'Not hosted',
+            link: '',
             github: 'https://github.com/Mela13076/dpr-data-management-project',
             duration: '6 months',
             challenges: 'Confronted with limited prior experience in web development, I embarked on a transformative six-month journey. Overcoming this challenge, I swiftly acquired the fundamentals of full-stack development. This accelerated learning enabled me to deliver a robust solution that showcases my commitment and growth in the field.',
@@ -53,7 +68,7 @@ function Projects(){
             ],
             technologies: ['Frontend: HTML, CSS, JavaScript, React.js',
             'API: Rick and Morty API'],
-            link: 'Not hosted',
+            link: '',
             github: 'https://github.com/Mela13076/project-5',
             duration: '2 weeks',
             challenges: 'The primary challenge I encountered while coding this project revolved around working with APIs. This marked my inaugural experience integrating an API into a website.',

@@ -14,8 +14,8 @@ function Home(){
                 <img src={Self} alt="myself"  className="self-one" />
             </div>
             <div className="intro-section">
-                <p>I am a dedicated and passionate web developer with a background in electrical engineering. Currently pursuing a Master's degree in Computer Science with a focus on web development and artificial intelligence.</p>
-                <p>With expertise in frontend development using React and a strong foundation in full-stack web development, I bring a creative and problem-solving approach to my projects. Proficient in languages such as C, C++, Python, Java, HTML, CSS, and JavaScript.</p>
+                <p>I am a dedicated and passionate web developer with a background in electrical engineering. Currently pursuing a Master's degree in Computer Science with a focus on Cybersecurity and Artificial Intelligence.</p>
+                <p>With expertise in frontend development using React and a strong foundation in full-stack web development, I bring a creative and problem-solving approach to my projects. Experience in languages such as C, C++, Python, Java, HTML, CSS, and JavaScript.</p>
                 <p>Explore my portfolio to discover the projects I've worked on, showcasing my technical abilities and innovative mindset.</p>
                 <p>Reach out to collaborate or inquire further. Let's create together!</p>
                 <div className="home-buttons">

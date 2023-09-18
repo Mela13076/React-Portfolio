@@ -22,7 +22,7 @@ function ProjectComponet(props){
       const restPart = text.slice(colonIndex + 1);
       return (
         
-        <li><b>{firstPart}</b> {restPart}</li>
+        <p className='features'><i><b>{firstPart}</b></i> {restPart}</p>
       );
     } else {
       return <p>{text}</p>;
@@ -31,9 +31,9 @@ function ProjectComponet(props){
 
     return(
         <div className="projects">
-            <h2 className="projectName"><i>{name}</i></h2>
+            <h2 className="projectName neon-text-blue"><i>{name}</i></h2>
             <p className="projectDescription">{description}</p>
-            <img src={gif} alt="project" className="projectGif" height='400px' onClick={handleThumbnailClick}/>
+            <img src={gif} alt="project" className="projectGif"  onClick={handleThumbnailClick}/>
             
             {showLightbox && (
                 <div className="lightbox-overlay" onClick={handleCloseLightbox}>
@@ -47,26 +47,48 @@ function ProjectComponet(props){
             )}
             {features.length > 0 && (
               <div className="projectFeatures">
-                <h3>Features</h3>
-                <p>
-                  {features.map((detail, index) => (
+                <h3 className='neon-text-blue'>Features</h3>
+                  <ul>
+                    {features.map((detail, index) => (
                     // <li key={index}>{detail}</li>
-                    <div key={index}>{formatFeatureText(detail)}</div>
+                    <li key={index} >{formatFeatureText(detail)}</li>
                   ))}
-                </p>
+                  </ul>
+                  
+                
+                  
+                
               </div>
             )}
             {technologies.length > 0 && (
               <div className="projectTechnologies">
-                <h3>Technologies</h3>
-                <p>
+                <h3 className='neon-text-blue'>Technologies</h3>
+                <ul>
                   {technologies.map((detail, index) => (
-                    <li key={index}>{detail}</li>
+                    <li key={index}>{formatFeatureText(detail)}</li>
                   ))}
-                </p>
-              
+                </ul>
               </div>
             )}
+
+            <div className="challenges">
+              <h3 className="neon-text-blue">Challenges Faced</h3>
+              <p>{challenges}</p>
+            </div>
+
+            <h3 className="neon-text-blue">Duration of Project:</h3>
+            <p>{duration}</p>
+
+            <h3 className='neon-text-blue'>Links to Project </h3>
+             
+            <div className="link-btn">
+               {link.length > 0 &&(
+                <a href={link} className='links'> See Project!</a>
+              )}
+              <a href={github} className='links'>Github Code</a>
+            </div>
+            
+            
 
         </div>
     )

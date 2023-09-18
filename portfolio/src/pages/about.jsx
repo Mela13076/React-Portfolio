@@ -16,20 +16,28 @@ function About(){
 
                 <div className="educational-background square">  
                     <h2 className="neon-text-about">Educational Background</h2>
-                    <div className="timeline">
-                        <div className="timeline-point">
-                            <div className="timeline-date">2019</div>
-                            <div className="timeline-description">
-                            Bach
-                            </div>
-                        </div>
-                        <div className="timeline-point">
-                            <div className="timeline-date">2023-2025</div>
-                            <div className="timeline-description">
-                            Master's of Science in Computer Science
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Bachelors of Science in Eletrical Engineering</h3>
+                    <p>Minors</p>
+                    <ol>
+                        <li>Computer Science</li>
+                        <li>Mathematics</li>
+                        
+                    </ol>
+                 </div>
+
+                <div className="work-experience square">
+                    <h2 className="neon-text-about">Work Experience</h2>
+                    <h3>Software Engineer Intern</h3>
+                    <dl>
+                        <dt>Company</dt>
+                            <dd>- TAMUK</dd>
+                        <dt>Position</dt>
+                            <dd>- Software Engineer Intern</dd>
+                        <dt>Duration</dt>
+                            <dd>- May 2021 - August 2021</dd>
+                        <dt>Milk</dt>
+                            <dd>- white cold drink</dd>
+                    </dl>
                  </div>
 
                 <div className="professional-journey square">

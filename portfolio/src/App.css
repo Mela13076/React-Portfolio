@@ -50,9 +50,9 @@
   color: white;
 }
 
-.menu li {
+/* .menu li {
   margin-left: 1rem;
-}
+} */
 
 
 .menu a {
@@ -236,11 +236,12 @@
 
 }
 
-.home-buttons{
+.home-buttons,
+.link-btn{
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 
@@ -345,6 +346,52 @@
 }
 
 
+
+
+
+
+/* EducationalExperience.css */
+
+/* .educational-background {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  
+}
+
+.educational-background h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.educational-background h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.educational-background p {
+  font-size: 16px;
+  margin: 0;
+  color: #666;
+}
+
+.educational-background ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.educational-background li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #666;
+} */
+
+
+
+
+
 /********* Certificate Page Styles *********/
 
 .certificate-page {
@@ -412,13 +459,15 @@
 }
 
 .projectGif{
-  width: clamp(60%, 700px, 80%);
+  width: clamp(80%, 800px, 100%);
   height: auto;
 }
 
 .projects{
-  border: 2px solid white;
-  box-shadow: 0 0px 40px white;
+  /* border: 2px solid white;
+  box-shadow: 0 0px 40px white; */
+  border: 3px solid #55fef9; 
+  box-shadow: 0 0px 40px #55fef9;
   margin-bottom: 30px;
   padding: 20px;
 }
@@ -427,9 +476,153 @@
   padding-bottom: 30px;
 }
 
+.features{
+  text-align: start;
+}
+
+.neon-text-blue{
+  text-shadow: 0 0 10px #55fef9, 
+    0 0 20px #55fef9, 
+    0 0 30px #55fef9, 
+    0 0 40px #55fef9;
+  color: white;
+}
+
+/* .link-btn{
+
+} */
+
 
 
 
 /********* Contact Page Styles *********/
 
+.content-con{
+  border: 3px solid #55fef9; 
+  box-shadow: 0 0px 40px #55fef9;
+  width: 85%;
+  margin: 20px auto;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contactInfo{
+  flex: 40;
+}
+
+.message-form{
+  flex: 65%;
+}
+
+.contactInfo h3,
+.contactInfo h2,
+.message-form h2{
+  color: #ff4bd8;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+/* .message-form h2{
+  text-align: center;
+
+} */
+
+.message-form form{
+  display: flex;
+  flex-direction: column;
+}
+.message-form label{
+  color: #5ce1e6;
+  margin-bottom: 5px;
+  text-align: start;
+}
+
+.message-form input,
+.message-form textarea,
+.message-form button{
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #26314f;
+  color: white;
+  resize: vertical;
+}
+
+.message-form input:focus,
+.message-form textarea:focus{
+  border-bottom: 2px solid #ff4bd8;
+}
+
+.message-form button:hover{
+  cursor: pointer;
+  border: 2px solid #5ce1e6;
+}
+
+.message-form button{
+  background: #ff4bd8;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+
+}
+
+@media (max-width: 920px){
+  .contactInfo,
+  .message-form {
+    flex: 100%;
+  }
+  /* .box-contactInfo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .box{
+    margin: 0 auto;
+  }
+
+}
+
+
+.contactInfo .box-contactInfo .box{
+  display: flex;
+}
+
+.contactInfo .box-contactInfo .box .icon{
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.contactInfo .boxes-social{
+  width: 30%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+
+.contactInfo .boxes-social .icon img{
+  text-decoration: none;
+  cursor: pointer;
+  width: 32px;
+}
+
+
+
+/* .contactInfo .boxes-social .icon:link,
+.contactInfo .boxes-social .icon:visited,
+.contactInfo .boxes-social .icon:active{
+  color:#5ce1e6;
+  
+} */
+
+.infoText{
+  text-align: start;
+}
 
