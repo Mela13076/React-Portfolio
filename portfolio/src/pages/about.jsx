@@ -133,7 +133,7 @@ function About(){
                         <li>- Attention to Detail</li>
                         <li>- Adaptability</li>
                         <li>- Time Management</li>
-                        <li>- eamwork</li>
+                        <li>- Teamwork</li>
                         <li>- Creativity</li>
                     </ul>
                     
