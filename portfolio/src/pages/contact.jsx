@@ -60,7 +60,7 @@ function Contact(){
                         </div>
                     </div>
                 </div>
-                <div className="message-form boxes-con">
+                {/* <div className="message-form boxes-con">
                     <h2>Message Me</h2>
                     <form>
                         <label htmlFor="name" id="name-label">Full Name</label>
@@ -96,7 +96,7 @@ function Contact(){
                         Submit
                         </button>
                     </form>
-                </div>
+                </div> */}
             </div>
         </div>
     )

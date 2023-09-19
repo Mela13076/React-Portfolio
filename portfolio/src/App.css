@@ -48,11 +48,12 @@
   list-style: none;
   color: #ff4bd8;
   color: white;
+
 }
 
-/* .menu li {
+.menu li {
   margin-left: 1rem;
-} */
+}
 
 
 .menu a {
@@ -138,7 +139,7 @@
 }
 
 
-/* Home Page Styles */ 
+/******************* Home Page Styles ********************/ 
 
 
 .home-page{
@@ -155,10 +156,10 @@
   text-shadow: -15px 5px 20px #ced0d3;
   text-align: center;
   color: #ffffff;
-  text-shadow: 3px 3px 3px #EF5097,  
+  text-shadow: 3px 3px 3px #ff4bd8,  
       5px 5px 5px #55fef9;
   /* text-shadow: 
-    3px 3px 0px #EF5097, 
+    3px 3px 0px #ff4bd8, 
     5px 5px 0px #6868AC; */
 }
 
@@ -166,11 +167,11 @@
   .page-header{
     font-size: 3rem;
     /* text-shadow: 
-    3px 3px 0px #EF5097, 
+    3px 3px 0px #ff4bd8, 
     5px 5px 0px #6868AC; */
-    text-shadow: 3px 3px 3px #EF5097,  
+    text-shadow: 3px 3px 3px #ff4bd8,  
       5px 5px 5px #55fef9;
-    /* 3px 3px 5px #EF5097, 
+    /* 3px 3px 5px #ff4bd8, 
     5px 5px 10px #6868AC; */
   }
 }
@@ -184,7 +185,7 @@
   
 }
 .self-one{
-  box-shadow: 0 5px 20px #EF5097;
+  box-shadow: 0 5px 20px #ff4bd8;
   border-radius: 90%;
   max-height: 350px;
   max-width: 350px;
@@ -229,10 +230,10 @@
 }
 
 .neon-text{
-  text-shadow: 0 0 10px #EF5097,
-             0 0 20px #EF5097,
-             0 0 30px #EF5097,
-             0 0 40px #EF5097;
+  text-shadow: 0 0 10px #ff4bd8,
+             0 0 20px #ff4bd8,
+             0 0 30px #ff4bd8,
+             0 0 40px #ff4bd8;
 
 }
 
@@ -262,8 +263,8 @@
   border-radius: 5px;
   background-color: #ff4bd8;
   color: white;
-  box-shadow: 0 0 10px #EF5097,
-             0 0 20px #EF5097;
+  box-shadow: 0 0 10px #ff4bd8,
+             0 0 20px #ff4bd8;
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s;
   font-weight: 600;
@@ -282,6 +283,9 @@
     margin: 10px 0;
   }
 }
+
+
+
 
 
 
@@ -323,14 +327,16 @@
 
 .square:nth-child(odd) {
   align-self: flex-end;
-  margin-right: 60px;
+  margin-right: 40px;
+  margin-left: 10px;
   border: 3px solid #55fef9;
   box-shadow: 0 0px 40px #55fef9;
 }
 
 .square:nth-child(even) {
   align-self: flex-start;
-  margin-left: 60px;
+  margin-left: 40px;
+  margin-right: 10px;
   border: 3px solid #ff4bd8; 
   box-shadow: 0 0px 40px #ff4bd8;
 }
@@ -342,52 +348,49 @@
 
 /* Even neon effect (pink) */
 .square:nth-child(odd) .neon-text-about {
-  text-shadow: 0 0 10px #ef5097, 0 0 20px #ef5097, 0 0 30px #ef5097, 0 0 40px #ef5097;
+  text-shadow: 0 0 10px #ff4bd8, 0 0 20px #ff4bd8, 0 0 30px #ff4bd8, 0 0 40px #ff4bd8;
 }
 
 
-
-
-
-
-/* EducationalExperience.css */
-
-/* .educational-background {
-  padding: 20px;
-  margin: 20px;
-  border-radius: 8px;
-  
+.about-images{
+  max-width: 600px;
 }
 
-.educational-background h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #333;
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+
 }
 
-.educational-background h3 {
-  font-size: 18px;
+.about-list li{
   margin-bottom: 10px;
-  color: #444;
 }
 
-.educational-background p {
-  font-size: 16px;
-  margin: 0;
-  color: #666;
+.sections-pink{
+  border: 3px solid #ff4bd8; 
+  /* box-shadow: 0 0px 40px #ff4bd8; */
+  margin-bottom: 25px;
+  padding: 20px;
 }
 
-.educational-background ul {
-  list-style: disc;
-  padding-left: 20px;
+.sections-blue{
+  border: 3px solid #55fef9; 
+  /* box-shadow: 0 0px 40px #55fef9; */
+  margin-bottom: 25px;
+  padding: 20px;
 }
 
-.educational-background li {
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: #666;
-} */
+@media (max-width: 420px){
+  .square:nth-child(odd),
+  .square:nth-child(even)  {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  
+  
 
+}
 
 
 
@@ -500,12 +503,14 @@
 .content-con{
   border: 3px solid #55fef9; 
   box-shadow: 0 0px 40px #55fef9;
-  width: 85%;
-  margin: 20px auto;
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 60px;
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 500px;
 }
 
 .contactInfo{

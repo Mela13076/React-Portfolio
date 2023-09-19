@@ -1,9 +1,11 @@
-import Navigation from "../componets/navbar"
+
 import Self from "../assets/self1.png"
 import { Link } from "react-router-dom"
 
 
+
 function Home(){
+
 
     return(
         <div className="home-page">
